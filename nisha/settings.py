@@ -25,7 +25,7 @@ SECRET_KEY = ')4h9en5jb-%^)bdq5e!i=mugnkbwc+b*1mf3+x^2b-+l=_*wx#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'nisha.wsgi.application'
+WSGI_APPLICATION = 'nisha.wsgi.app'
 
 
 # Database
