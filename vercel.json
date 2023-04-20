@@ -1,3 +1,17 @@
+
+ 
+
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "builds": [
+    {
+      "src": "nisha/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "nisha/wsgi.py"
+    }
+  ]
 }
